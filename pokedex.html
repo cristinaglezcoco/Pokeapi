@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeapi</title>
+    <link rel="stylesheet" href="styles/pokedex.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body-pokedex">
+
+    <nav class="navPokemon">
+        <ul>
+            <li class="nav-item-pokedex"><a href="index.html">Home</a><img class="poke" src="assets/pokeball.png" alt="pokeball"></li>
+            <li class="nav-item-pokedex"><a href="pokedex.html">Pokedex</a><img class="poke" src="assets/pokeball.png" alt="pokeball"></li>
+            <li class="nav-item-pokedex"><a href="classification.html">Classification</a><img class="poke" src="assets/pokeball.png" alt="pokeball"></li>
+        </ul>
+
+    </nav>
+
+    <div class="container-pokedex">
+
+        <div class="select-pokemon">
+            <img src="assets/Pokédex_logo.png" alt="logo pokedex">
+            <div class="choosePokemon">
+                <input class="valuePokemon" type="text" id="value-pokemon" placeholder="Ej: Nombre o número de Id">
+                <button class="selectbtn" id="selectbtn"><span>Search your Pokemon</span></button>
+            </div>
+        </div>
+
+        <div class="eachPokemon">
+            <!-- <div class="pokemonCard"></div> CREADO DINAMICANTE-->
+        </div>
+            
+    </div>
+
+
+    <div class="container-pokemons">
+        <a href="allPokemons.html" class="showAllPokemons"><span>All the Pokemons</span></a>
+    </div>
+
+    <script src="pokedex.js"></script>
+
+</body>
+</html>

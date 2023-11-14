@@ -1,0 +1,131 @@
+/*HOME*/
+
+.body-index {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.body-index >img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.navPokeball {
+    width: 350px;
+    height: 350px;
+    
+}
+
+.navPokeball >ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    padding: 30px 30px;
+
+}
+
+.nav-item {
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 30px;
+    transition: all ease 1s;
+    overflow-x: hidden;
+}
+
+.nav-item:hover {
+    transform: scale(130%);
+}
+
+
+.nav-item:first-child {
+    top: 10%;
+    left: 20%;
+}
+
+.nav-item:nth-child(2) {
+    top: 30%;
+    left: 80%;
+}
+
+.nav-item:last-child {
+    top: 65%;
+    left: 30%;
+}
+
+.nav-item >a {
+    color: black;
+}
+
+.pokeball {
+    width: 35px;
+    height: 35px;
+    transform: translateX(280%);
+    transition: all ease 1s;
+}
+
+.nav-item:hover >.pokeball{
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 992px) {
+
+    .nav-item:first-child {
+        top: 10%;
+        left: 20%;
+    }
+    
+    .nav-item:nth-child(2) {
+        top: 30%;
+        left: 20%;
+    }
+    
+    .nav-item:last-child {
+        top: 50%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+
+    .nav-item {
+        font-size: 20px;
+    }
+
+    .nav-item:first-child {
+        top: 10%;
+        left: 0%;
+        margin-left: -16%;
+    }
+    
+    .nav-item:nth-child(2) {
+        top: 25%;
+        left: 0%;
+        margin-left: -14%;
+    }
+    
+    .nav-item:last-child {
+        top: 40%;
+        left: 0%;
+        margin-left: -10%;
+    }
+
+    .pokeball {
+        width: 22px;
+        height: 22px;
+        transform: translateX(490%);
+    }
+}
+

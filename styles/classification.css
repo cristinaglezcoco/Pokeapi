@@ -1,0 +1,177 @@
+/*NAV CLASSIFICATION*/
+
+.navPokemon {
+    width: 100%;
+    height: 80px;
+    background-color: #353535e2;
+
+}
+
+.navPokemon >ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.nav-item-pokedex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 20px;
+}
+
+.nav-item-pokedex >a {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item-pokedex >.poke {
+    width: 30px;
+    height: 30px;
+}
+/*BODY CLASSIFICATION*/
+
+.body-classification {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/fondopaisaje.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.separator-pokemons {
+    width: 120px;
+    height: 100px;
+
+}
+
+.separator-pokemons >img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-orderpokemons {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    overflow: scroll;
+    padding: 50px 30px;
+}
+
+.container-orderpokemons >div {
+    width: 250px;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 49%, rgba(0,0,0,1) 50%, rgba(255,12,12,1) 51%);
+    border: 2px solid black;
+}
+
+.container-orderpokemons >div >img:first-child{
+    width: 100px;
+    height: 100px;
+    transition: all ease 1s;
+    transform: translateY(10px);
+}
+
+.cardpokeball {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.container-orderpokemons >div >h2{
+    transform: translateY(170%);
+    transition: all ease 1s;
+}
+
+.container-orderpokemons >div >p {
+    transform: translateY(300%);
+    font-weight: bold;
+}
+
+
+.statsList {
+    opacity: 0;
+    transform: scale(0%);
+    transition: all ease 1s;
+}
+
+.container-orderpokemons >div:hover >img:first-child {
+    width: 90px;
+    height: 90px;
+    transform: translateY(-10px);
+}
+
+.container-orderpokemons >div:hover >h2 {
+    transform: translateY(-20px);
+    color: white;
+}
+
+.container-orderpokemons >div:hover >p {
+    display: none;
+}
+
+.container-orderpokemons >div:hover .statsList {
+    opacity: 1;
+    transform: scale(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .container-orderpokemons >div {
+        transform: scale(80%);
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav-item-pokedex >.poke {
+    display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-item-pokedex {
+        font-size: 15px;
+    }
+    
+    .container-orderpokemons {
+        align-items: flex-start;
+        padding: 0px 30px 50px;
+    }
+
+    .separator-pokemons {
+        transform: scale(80%);
+        transition: all ease 1s;
+    }
+
+    .container-orderpokemons >div {
+        transform: scale(60%);
+    }
+    
+}
+
